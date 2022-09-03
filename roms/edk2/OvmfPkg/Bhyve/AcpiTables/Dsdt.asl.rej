@@ -1,0 +1,11 @@
+--- Dsdt.asl	2022-09-01 05:21:27.520058800 +0530
++++ Dsdt.asl	2022-09-01 06:49:48.176431300 +0530
+@@ -22,7 +22,7 @@
+  *     Compiler ID      "INTL"
+  *     Compiler Version 0x20150204 (538247684)
+  */
+-DefinitionBlock ("DSDT.aml", "DSDT", 2, "BHYVE", "BVDSDT", 0x00000001)
++DefinitionBlock ("DSDT.aml", "DSDT", 2, "INTEL", "CR32  ", 0x00000098)
+ {
+     Name (_S5, Package (0x02)
+     {
