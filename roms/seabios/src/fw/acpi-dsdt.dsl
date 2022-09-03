@@ -23,7 +23,7 @@ DefinitionBlock (
     "acpi-dsdt.aml",    // Output Filename
     "DSDT",             // Signature
     0x01,               // DSDT Compliance Revision
-    "BXPC",             // OEMID
+    "CR32",             // OEMID
     "BXDSDT",           // TABLE ID
     0x1                 // OEM Revision
     )

@@ -483,7 +483,7 @@ smbios_new_type_0(void *start,
 }
 
 #define BIOS_NAME "SeaBIOS"
-#define BIOS_DATE "04/01/2014"
+#define BIOS_DATE "11/03/2018"
 
 /*
  * Build tables using qtables as input, adding additional type 0

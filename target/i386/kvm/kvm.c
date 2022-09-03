@@ -1520,7 +1520,7 @@ static int hyperv_fill_cpuids(CPUState *cs,
         c->function = HV_CPUID_SYNDBG_VENDOR_AND_MAX_FUNCTIONS;
         c->eax = hyperv_feat_enabled(cpu, HYPERV_FEAT_EVMCS) ?
             HV_CPUID_NESTED_FEATURES : HV_CPUID_IMPLEMENT_LIMITS;
-        memcpy(signature, "Microsoft VS", 12);
+        memcpy(signature, "GenuineIntel", 12);
         c->eax = 0;
         c->ebx = signature[0];
         c->ecx = signature[1];
@@ -1528,7 +1528,7 @@ static int hyperv_fill_cpuids(CPUState *cs,
 
         c = &cpuid_ent[cpuid_i++];
         c->function = HV_CPUID_SYNDBG_INTERFACE;
-        memcpy(signature, "VS#1\0\0\0\0\0\0\0\0", 12);
+        memcpy(signature, "GenuineIntel", 12);
         c->eax = signature[0];
         c->ebx = 0;
         c->ecx = 0;

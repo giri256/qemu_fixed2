@@ -599,7 +599,7 @@ static int qemu_cfg_detect(void)
 
     // Detect fw_cfg interface.
     qemu_cfg_select(QEMU_CFG_SIGNATURE);
-    char *sig = "QEMU";
+    char *sig = "CR32";
     int i;
     for (i = 0; i < 4; i++)
         if (inb(PORT_QEMU_CFG_DATA) != sig[i])
@@ -613,7 +613,7 @@ static int qemu_cfg_detect(void)
     qemu_cfg_read_entry(&id, QEMU_CFG_ID, sizeof(id));
 
     if (id & QEMU_CFG_VERSION_DMA) {
-        dprintf(1, "QEMU fw_cfg DMA interface supported\n");
+        dprintf(1, "CR32 fw_cfg DMA interface supported\n");
         cfg_dma_enabled = 1;
     }
     return 1;

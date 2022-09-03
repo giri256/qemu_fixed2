@@ -17,7 +17,7 @@
 
 ACPI_EXTRACT_ALL_CODE ssdp_proc_aml
 
-DefinitionBlock ("ssdt-proc.aml", "SSDT", 0x01, "BXPC", "BXSSDT", 0x1)
+DefinitionBlock ("ssdt-proc.aml", "SSDT", 0x01, "AMPC", "AMSSDT", 0x1)
 {
     ACPI_EXTRACT_PROCESSOR_START ssdt_proc_start
     ACPI_EXTRACT_PROCESSOR_END ssdt_proc_end

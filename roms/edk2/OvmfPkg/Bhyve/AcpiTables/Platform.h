@@ -20,10 +20,10 @@
 //
 // ACPI table information used to initialize tables.
 //
-#define EFI_ACPI_OEM_ID            'B','H','Y','V','E',' '  // OEMID 6 bytes long
-#define EFI_ACPI_OEM_REVISION      0x1
-#define EFI_ACPI_CREATOR_ID        SIGNATURE_32('B','H','Y','V')
-#define EFI_ACPI_CREATOR_REVISION  0x00000001
+#define EFI_ACPI_OEM_ID            'C','R','3','2',' ',' '   // OEMID 6 bytes long
+#define EFI_ACPI_OEM_REVISION      0x20201230
+#define EFI_ACPI_CREATOR_ID        SIGNATURE_32('C','R','6','4')
+#define EFI_ACPI_CREATOR_REVISION  0x00000098
 
 #define INT_MODEL        0x01
 #define SCI_INT_VECTOR   0x0009
